@@ -1,0 +1,60 @@
+iniciando-compra:
+  - ''
+  - ''
+  - '&aDigite no chat a quantidade que você deseja comprar'
+  - '&aSeu limite: &f@limite'
+  - '&aSeu desconto: &6@desconto'
+  - ''
+  - '&cDigite &fcancelar &cpara cancelar o processo'
+  - ''
+  - ''
+
+quantia-incorreta:
+  - ''
+  - '&cO valor informado deve ser um número'
+  - ''
+
+quantia-excessiva:
+  - ''
+  - '&cO valor informado é muito grande'
+  - ''
+
+limite-adicionado:
+  - ''
+  - '&cFoi adicionado &f@quantia&cx de limite a sua conta!'
+  - ''
+
+maquina-adicionada:
+  - ''
+  - '&eVocê adicionou @quantiax máquinas!'
+  - ''
+
+inventario-cheio:
+  - ''
+  - '&eSeu inventário ficou cheio!'
+  - ''
+
+maquina-recebida:
+  - ''
+  - '&eVocê recebeu @quantiax máquinas!'
+  - ''
+
+maquina-comprada:
+  - ''
+  - '&aParabéns, você finalizou o processo de compra'
+  - '&aVocê comprou &6@quantia &e@nome_maquina'
+  - ''
+
+maior-que-limite:
+  - ''
+  - '&cA quantia informada é maior que seu limite!'
+  - '&6Limite atual: &f@limite'
+  - ''
+
+dinheiro-insuficiente:
+  - ''
+  - '&cVocê não possui dinheiro suficiente!'
+  - ''
+
+processo-cancelado:
+  - '&cVocê cancelou o processo de compra'

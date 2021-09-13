@@ -1,0 +1,6 @@
+name: FastlyMaquinas
+version: 1.0
+main: net.stackmaquinas.plugin.StackCore
+commands:
+  maquinas:
+    aliases: [maquina]

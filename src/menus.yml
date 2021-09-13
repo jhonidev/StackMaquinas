@@ -1,0 +1,217 @@
+###########################
+###   NOME DOS MENUS    ###
+###########################
+nome-dos-menus:
+  menu-principal: '&8Máquinas'
+  lista-maquinas: '&8Lista das Máquinas'
+  gerenciar-maquinas: '&8Gerenciar Máquinas'
+  top-maquinas: '&8Top Máquinas'
+  gerenciando-maquina: '&8Gerenciando minha máquina'
+  recolher-maquinas: '&8Recolher máquinas'
+  lista-drops: '&8Lista drops'
+
+rows:
+  menu-principal: 3
+  lista-maquinas: 4
+  gerenciar-maquinas: 4
+  top-maquinas: 4
+  gerenciando-maquina: 4
+  recolher-maquinas: 4
+  lista-drops: 4
+###########################
+###   MENU PRINCIPAL    ###
+###########################
+
+menu-principal:
+  head:
+    slot: 10
+    nome: '&6Informações'
+    lore:
+      - '&7Seja bem-vindo &6@player'
+      - '&7ao painel das máquinas'
+      - ''
+      - '&7Seu limite: &6@limite'
+      - ''
+  recolher-maquinas:
+    material: 'CHEST'
+    slot: 11
+    nome: '&6Recolher Máquinas'
+    lore:
+      - '&7Clique aqui para abrir o menu'
+      - '&7para recolher suas máquinas'
+      - ''
+  gerenciar-maquinas:
+    material: 'STORAGE_MINECART'
+    slot: 14
+    nome: '&6Gerenciar minhas máquinas'
+    lore:
+      - ''
+      - '&7Clique aqui para abrir o menu'
+      - '&7das suas máquinas'
+      - ''
+  lista-maquinas:
+    material: 'POWERED_MINECART'
+    slot: 15
+    nome: '&6Lista das Máquinas'
+    lore:
+      - ''
+      - '&7Clique aqui para abrir a lista'
+      - '&7de máquinas do servidor'
+      - ''
+  top-maquinas:
+    material: 'DOUBLE_PLANT'
+    slot: 16
+    nome: '&6Lista dos top máquinas'
+    lore:
+      - ''
+      - '&7Clique aqui para abrir o menu'
+      - '&7dos top máquinas'
+      - ''
+
+###########################
+###  MENU GERENCIANDO   ###
+###########################
+menu-gerenciando:
+  informacoes:
+    slot: 10
+    nome: '&eInformações'
+    material: 'ARMOR_STAND'
+    lore:
+      - '&7Máquina de: &e@drop'
+      - '&7Gerando a cada &e@delay_segundos &7segundos'
+      - '&7Gerando uma quantia de &e@quantia_drop &7@drop'
+      - ''
+      - '&7Nível de velocidade: &c@nivel_velocidade'
+      - '&7Nível de drops: &c@nivel_quantidade'
+      - ''
+      - '&7Você possui &e@maquina_quantidade &7máquinas'
+  recolher-drop:
+    slot: 11
+    nome: '&eRecolher drop'
+    material: 'STORAGE_MINECART'
+    lore:
+      - '&7Clique aqui para recolher um'
+      - '&7total de &e@total &7@drop'
+  lista-drops:
+    slot: 13
+    nome: '&eLista dos drops'
+    material: 'PAPER'
+    lore:
+      - '&7Clique aqui para ver a lista'
+      - '&7dos drops dessa máquina'
+  upgrade-velocidade:
+    slot: 15
+    nome: '&eEvolução de Velocidade'
+    material: 'FEATHER'
+    lore:
+      - '&7Este upgrade permite que sua'
+      - '&7máquina gere mais rápido'
+      - ''
+      - '&7Tempo atual: &c@atual'
+      - '&7Tempo após evolução: &c@apos_evolucao'
+      - '&7Custo para evoluir: &c@custo @forma_pagamento'
+      - ''
+      - '&cClique para evoluir'
+    lore-nivel-maximo:
+      - '&7Este upgrade permite que sua'
+      - '&7máquina gere mais rápido'
+      - ''
+      - '&7Tempo atual: &c@atual'
+      - ''
+      - '&cUpgrade no nível maximo'
+  upgrade-quantidade:
+    slot: 16
+    nome: '&eEvolução de Quantidade'
+    material: 'CHEST'
+    lore:
+      - '&7Este upgrade permite que sua'
+      - '&7máquina gere mais quantidade'
+      - ''
+      - '&7Quantidade atual: &c@atual'
+      - '&7Quantidade após evolução: &c@apos_evolucao'
+      - '&7Custo para evoluir: &c@custo @forma_pagamento'
+      - ''
+      - '&cClique para evoluir'
+    lore-nivel-maximo:
+      - '&7Este upgrade permite que sua'
+      - '&7máquina gere mais quantidade'
+      - ''
+      - '&7Quantidade atual: &c@atual'
+      - ''
+      - '&cUpgrade no nível maximo'
+
+###########################
+###  MENU TOP MÁQUINAS  ###
+###########################
+
+top-maquinas:
+  nome: '&4@lugarº Lugar'
+  lore:
+    - ''
+    - '&7Jogador: &c@player'
+    - '&7Total: &4$&c@total'
+    - ''
+
+###########################
+###   MENU GERENCIAR    ###
+###########################
+
+gerenciar-maquinas:
+  nome: '@nome_maquina'
+  lore:
+    - '@lore_maquina'
+    - ''
+    - '&7Quantidade: &6@quantidade'
+    - ''
+
+###########################
+###   MENU RECOLHER     ###
+###########################
+
+recolher-maquinas:
+  nome: '@nome_maquina'
+  lore:
+    - '@lore_maquina'
+    - ''
+    - '&7Clique para recolher'
+    - '&c@quantia&7x maquinas'
+
+###########################
+### LISTA DE MÁQUINAS   ###
+###########################
+
+lista-maquinas:
+  nome: '@nome_maquina'
+  lore-com-perm:
+    - '@lore_maquina'
+    - ''
+    - '&7Preço: &2$&a@preco'
+    - '&7Desconto: &c@desconto'
+    - ''
+    - '&cClique para adquirir'
+  lore-sem-perm:
+    - '@lore_maquina'
+    - ''
+    - '&cVocê nao possui permissao'
+    - '&cpara comprar essa maquina'
+
+###########################
+###  LISTA DROPS        ###
+###########################
+
+papel-comandos:
+  nome: '&eComandos'
+
+###########################
+### ITEM DE VOLTAR MENU ###
+###########################
+
+proxima-pagina: '&aPróxima Página'
+pagina-anterior: '&aPágina Anterior'
+
+voltar-item:
+  material: 'ARROW'
+  nome: '&cVoltar'
+  lore:
+    - '&7Clique aqui para voltar'
+    - '&7ao menu principal'

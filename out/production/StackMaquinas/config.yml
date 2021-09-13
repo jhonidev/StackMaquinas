@@ -1,0 +1,93 @@
+Chave: ''
+
+mysql:
+  usar: false
+  host: ''
+  porta: ''
+  usuario: ''
+  senha: ''
+  banco: ''
+
+options:
+  limite-inicial: '1'
+  descontos: #utilize o formato 'permissão;porcentagem' ex: 'vip.desconto;15'
+    - 'vip1.desconto;15'
+    - 'vip.teste;50'
+
+item-limite:
+  nome: '&6Limite de Máquina'
+  material: 'QUARTZ'
+  lore:
+    - '&7Clique para ativar'
+    - '&6@quantia&7x limite' #não colocar mais nenhum número na lore (deixar apenas a quantia)
+
+maquinas:
+  churros:
+    nome: '&eMáquina de Churros'
+    bloco: 'GOLD_BLOCK'
+    lore:
+      - ''
+      - '&7Essa máquina irá lhe gerar'
+      - '&7churros para sempre.'
+      - ''
+    nome-drop: 'Churros'
+    preco: 15000.0
+    permitir-venda: false
+    permissao-para-comprar: true
+    permissao: 'stackmaquinas.churros'
+    drop:
+      comandos: true
+      papel-comandos: #é exibido na lista de drops da máquina
+        - ''
+        - '&eVocê recebe 1 de cash por drop'
+        - ''
+      lista-comandos:
+        - 'eco give @player @quantia'
+      items: true
+      lista-items:
+        'item1':
+          material: 'DIAMOND'
+          nome: '&eDiamante do Churros'
+          quantidade: 1
+          lore:
+            - ''
+            - '&cDiamante dropado da maquina'
+            - '&cde Churros'
+            - ''
+            - '&cVocê recebe: &f@valor &cde &f@pagamento' #pagamento é: money ou cash
+            - ''
+          valor-venda: 150.0
+          pagamento-venda: 'money' #utilize: money ou cash
+        'item2':
+          material: 'EMERALD'
+          nome: '&eEsmeralda do Churros'
+          quantidade: 1
+          lore:
+            - ''
+            - '&cEsmeralda dropada da maquina'
+            - '&cde Churros'
+            - ''
+            - '&cVocê recebe: &f@valor &cde &f@pagamento' #pagamento é: money ou cash
+            - ''
+          valor-venda: 150.0
+          pagamento-venda: 'cash' #utilize money ou cash
+    opcoes:
+      delay-wave: 60 #delay em segundos para dar o drop
+      drop-inicial: 1 #quantidade de drop que começa dando
+      upgrades:
+        upgrade-velocidade:
+          usar: true
+          nivel-maximo: 10
+          segundos-removidos: 1 #quantidade de segundos que remove por nível
+          custo:
+            pagamento: 'money' #opções: money, cash
+            custo-inicial: 100
+            aumento-custo: 15.0 #aumenta 15% por nível
+        upgrade-quantidade:
+          usar: true
+          nivel-maximo: 10
+          aumenta-quantidade: 1 #aumenta 1 na quantidade dropada
+          custo:
+            pagamento: 'money'
+            custo-inicial: 150
+            aumento-custo: 10.0
